@@ -7,12 +7,31 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     #profile {
-      width: 180px;
-      height: 200px;
-      padding: 70px;
+      width: 150px;
+      height: 150px;
+      padding: 20px;
     }
     img {
       border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+      #sidemenu {
+        position: relative;
+        height: auto;
+        width: 100%;
+        padding-bottom: 20px;
+      }
+      #content {
+        position: relative;
+        width: 100%;
+        left: auto;
+      }
+      #profile {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+      }
     }
   </style>
 </head>
@@ -20,7 +39,7 @@
   <div class="container-fluid">
     <div class="row">
       <div id="sidemenu" class="col-md-3 bg-primary py-5">
-        <div class="text-center mb-5">
+        <div class="text-center mb-3">
           <img id="profile" src="profile.webp" alt="profile">
         </div>
         <ul class="nav flex-column">
